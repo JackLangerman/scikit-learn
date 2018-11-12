@@ -1794,13 +1794,13 @@ def hamming_loss(y_true, y_pred, labels=None, sample_weight=None):
 
     Notes
     -----
-    In multiclass classification, the Hamming loss correspond to the Hamming
+    In multiclass classification, the Hamming loss corresponds to the Hamming
     distance between ``y_true`` and ``y_pred`` which is equivalent to the
     subset ``zero_one_loss`` function.
 
     In multilabel classification, the Hamming loss is different from the
-    subset zero-one loss. The zero-one loss considers the entire set of labels
-    for a given sample incorrect if it does entirely match the true set of
+    subset zero-one loss in that it considers the entire set of labels
+    for a given sample incorrect if any of them is does not match one of the true
     labels. Hamming loss is more forgiving in that it penalizes the individual
     labels.
 
